@@ -1,0 +1,362 @@
+@charset "utf-8";
+//初始化
+body {
+  margin: 0px;
+  font-size:16/@rem;
+  font-family:Arial,Helvetica,STHeiTi,sans-serif;
+}
+a {
+//   -webkit-tap-highlight-color: transparent;
+//   text-decoration: none;
+//   color:#000;
+}
+input {
+  -webkit-appearance: none;
+}
+ul{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+img{
+	border:none;
+	vertical-align: middle;
+}
+.clearfix:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+/*LESS*/
+// 变量定义rem大小，并设置单位
+@rem:75rem;
+/*解决ios下表单圆角的问题*/
+/*框架搭建*/
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+//主体部分
+.swiper-container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-slide {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet {
+  width: 44/@rem;
+  height: 14/@rem;
+  display: inline-block;
+  border-radius: 30%;
+  background: #000;
+  opacity: 0.2;
+}
+.bc1{
+  background: #a7c35f;
+  position: relative;
+}
+.sun{
+  position: absolute;
+  left: 160/@rem;
+  width: 81/@rem;
+  height: 199/@rem;
+  animation: sun 4s 0s infinite;
+}
+@keyframes sun{
+0%{
+  transform: scale(1);
+}
+50%{
+  transform: scale(2);
+}
+100%{
+  transform: scale(1);
+}
+}
+.c1{
+  position: absolute;
+  right: 110/@rem;
+  width: 213/@rem;
+  height: 217/@rem;
+  animation: co 4s 0s infinite;
+}
+.c2{
+  position: absolute;
+  right: 20/@rem;
+  width: 167/@rem;
+  height: 381/@rem;
+  animation: co 4s 0s infinite;
+}
+@keyframes co{
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(20/@rem);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.ru{
+  width: 498/@rem;
+  height: 480/@rem;
+  position: absolute;
+  left: 130/@rem;
+  top: 300/@rem;
+}
+.co{
+  width: 1258/@rem;
+  height: 155/@rem;
+  position: absolute;
+  bottom: 0/@rem;
+  left: -24/@rem;
+}
+.ln1{
+  font-size: 20/@rem;
+  position: absolute;
+  top: 870/@rem;
+  left: 350/@rem;
+  color: #fff;
+  font-weight: bold;
+  animation: fo 4s 0s infinite;
+}
+@keyframes fo{
+  0%{
+    transform: scale(1);
+  }
+  20%{
+    transform: scale(2);
+  }
+  40%{
+    transform: scale(3);
+  }
+  60%{
+    transform: scale(4);
+  }
+  80%{
+    transform: scale(2);
+  }
+  100%{
+    transform: scale(1);
+  }
+
+}
+.ln2{
+  font-size: 44/@rem;
+  position: absolute;
+  top: 930/@rem;
+  left: 276/@rem;
+  color: #fff;
+  
+}
+.ln3{
+  font-size: 44/@rem;
+  position: absolute;
+  top: 988/@rem;
+  left: 440/@rem;
+  color: #fff;
+}
+.ln4{
+  font-size: 44/@rem;
+  position: absolute;
+  top: 930/@rem;
+  left: 120/@rem;
+  color: #fff;
+}
+.ln5{
+  font-size: 44/@rem;
+  position: absolute;
+  top: 988/@rem;
+  left: 173/@rem;
+  color: #fff;
+}
+.bc2{
+  background: #8fcccf;
+  position: relative;
+}
+.ru2{
+  position: absolute;
+  top: 240/@rem;
+  left: 90/@rem;
+  width: 583/@rem;
+  height: 577/@rem;
+  animation: ru2 4s 0s infinite;
+}
+@keyframes ru2{
+  0%{
+    transform: scale(1);
+  }
+  50%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+
+}
+.saf{
+  position: absolute;
+  top: 655/@rem;
+  left: 510/@rem;
+  width: 129/@rem;
+  height: 135/@rem;
+}
+.bc3{
+  background: #ec8380;
+  position: relative;
+}
+.thc{
+  position: absolute;
+  width: 675/@rem;
+  height: 590/@rem;
+  top: 145/@rem;
+  right: 0;
+  animation: thc 4s 0s infinite;
+}
+@keyframes thc{
+  0%{
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+  50%{
+    transform: translate(30/@rem,-30/@rem);
+  }
+  100%{
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+
+}
+.plan{
+  position: absolute;
+  width: 711/@rem;
+  height: 417/@rem;
+  top: 270/@rem;
+  left: 20/@rem;
+  animation: plan 4s 0s infinite;
+}
+@keyframes plan{
+  0%{
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+  50%{
+    transform: translate(-20/@rem,30/@rem);
+  }
+  100%{
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+
+}
+.all{
+  position: absolute;
+  width: 616/@rem;
+  height: 385/@rem;
+  top: 230/@rem;
+  left: 50/@rem;
+}
+.bc4{
+  background: #eaba28;
+  position: relative;
+}
+.roud4{
+  position: absolute;
+  width: 399/@rem;
+  height: 412/@rem;
+  top: 330/@rem;
+  left: 168/@rem;
+}
+.apl{
+  width: 123/@rem;
+  height: 130/@rem;
+  position: absolute;
+  top: -150/@rem;
+  left: 95/@rem;
+  animation: apl 3s 0s infinite;
+}
+@keyframes apl{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(300/@rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.li{
+  width: 106/@rem;
+  height: 150/@rem;
+  position: absolute;
+  top: -150/@rem;
+  left: 255/@rem;
+  animation: apl 3s 1s infinite;
+}
+.ng{
+  width: 121/@rem;
+  height: 114/@rem;
+  position: absolute;
+  top: -150/@rem;
+  left: 385/@rem;
+  animation: apl 3s 2s infinite;
+}
+.org{
+  width: 114/@rem;
+  height: 116/@rem;
+  position: absolute;
+  top: -150/@rem;
+  left: 540/@rem;
+  animation: apl 3s 3s infinite;
+}
+.tg{
+  display: block;
+  width: 150/@rem;
+  height: 60/@rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: rgba(0,0,0,.7);
+  position: fixed;
+  top: 20/@rem;
+  right: 20/@rem;
+  z-index: 2;
+  border: none;
+  border-radius: 30/@rem;
+  >a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-decoration: none;
+    >div{
+      text-align: center;
+      width: 150/@rem;
+      font-size: 24/@rem;
+      height: 24/@rem;
+    }
+    >p{
+      text-align: center;
+      width: 150/@rem;
+      font-size: 24/@rem;
+      height: 24/@rem;
+      margin-top:1/@rem;
+    }
+  }
+ 
+}

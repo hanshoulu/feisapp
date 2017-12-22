@@ -1,0 +1,346 @@
+@charset "utf-8";
+body {
+  margin: 0px;
+  font-size: 0.21333333rem;
+  font-family: Arial, Helvetica, STHeiTi, sans-serif;
+}
+input {
+  -webkit-appearance: none;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/*LESS*/
+/*解决ios下表单圆角的问题*/
+/*框架搭建*/
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.swiper-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+.swiper-slide {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+.swiper-pagination-bullet {
+  width: 0.58666667rem;
+  height: 0.18666667rem;
+  display: inline-block;
+  border-radius: 30%;
+  background: #000;
+  opacity: 0.2;
+}
+.bc1 {
+  background: #a7c35f;
+  position: relative;
+}
+.sun {
+  position: absolute;
+  left: 2.13333333rem;
+  width: 1.08rem;
+  height: 2.65333333rem;
+  animation: sun 4s 0s infinite;
+}
+@keyframes sun {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.c1 {
+  position: absolute;
+  right: 1.46666667rem;
+  width: 2.84rem;
+  height: 2.89333333rem;
+  animation: co 4s 0s infinite;
+}
+.c2 {
+  position: absolute;
+  right: 0.26666667rem;
+  width: 2.22666667rem;
+  height: 5.08rem;
+  animation: co 4s 0s infinite;
+}
+@keyframes co {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0.26666667rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.ru {
+  width: 6.64rem;
+  height: 6.4rem;
+  position: absolute;
+  left: 1.73333333rem;
+  top: 4rem;
+}
+.co {
+  width: 16.77333333rem;
+  height: 2.06666667rem;
+  position: absolute;
+  bottom: 0rem;
+  left: -0.32rem;
+}
+.ln1 {
+  font-size: 0.26666667rem;
+  position: absolute;
+  top: 11.6rem;
+  left: 4.66666667rem;
+  color: #fff;
+  font-weight: bold;
+  animation: fo 4s 0s infinite;
+}
+@keyframes fo {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(2);
+  }
+  40% {
+    transform: scale(3);
+  }
+  60% {
+    transform: scale(4);
+  }
+  80% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.ln2 {
+  font-size: 0.58666667rem;
+  position: absolute;
+  top: 12.4rem;
+  left: 3.68rem;
+  color: #fff;
+}
+.ln3 {
+  font-size: 0.58666667rem;
+  position: absolute;
+  top: 13.17333333rem;
+  left: 5.86666667rem;
+  color: #fff;
+}
+.ln4 {
+  font-size: 0.58666667rem;
+  position: absolute;
+  top: 12.4rem;
+  left: 1.6rem;
+  color: #fff;
+}
+.ln5 {
+  font-size: 0.58666667rem;
+  position: absolute;
+  top: 13.17333333rem;
+  left: 2.30666667rem;
+  color: #fff;
+}
+.bc2 {
+  background: #8fcccf;
+  position: relative;
+}
+.ru2 {
+  position: absolute;
+  top: 3.2rem;
+  left: 1.2rem;
+  width: 7.77333333rem;
+  height: 7.69333333rem;
+  animation: ru2 4s 0s infinite;
+}
+@keyframes ru2 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.saf {
+  position: absolute;
+  top: 8.73333333rem;
+  left: 6.8rem;
+  width: 1.72rem;
+  height: 1.8rem;
+}
+.bc3 {
+  background: #ec8380;
+  position: relative;
+}
+.thc {
+  position: absolute;
+  width: 9rem;
+  height: 7.86666667rem;
+  top: 1.93333333rem;
+  right: 0;
+  animation: thc 4s 0s infinite;
+}
+@keyframes thc {
+  0% {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translate(0.4rem, -0.4rem);
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+.plan {
+  position: absolute;
+  width: 9.48rem;
+  height: 5.56rem;
+  top: 3.6rem;
+  left: 0.26666667rem;
+  animation: plan 4s 0s infinite;
+}
+@keyframes plan {
+  0% {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translate(-0.26666667rem, 0.4rem);
+  }
+  100% {
+    transform: translateX(0);
+    transform: translateY(0);
+  }
+}
+.all {
+  position: absolute;
+  width: 8.21333333rem;
+  height: 5.13333333rem;
+  top: 3.06666667rem;
+  left: 0.66666667rem;
+}
+.bc4 {
+  background: #eaba28;
+  position: relative;
+}
+.roud4 {
+  position: absolute;
+  width: 5.32rem;
+  height: 5.49333333rem;
+  top: 4.4rem;
+  left: 2.24rem;
+}
+.apl {
+  width: 1.64rem;
+  height: 1.73333333rem;
+  position: absolute;
+  top: -2rem;
+  left: 1.26666667rem;
+  animation: apl 3s 0s infinite;
+}
+@keyframes apl {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.li {
+  width: 1.41333333rem;
+  height: 2rem;
+  position: absolute;
+  top: -2rem;
+  left: 3.4rem;
+  animation: apl 3s 1s infinite;
+}
+.ng {
+  width: 1.61333333rem;
+  height: 1.52rem;
+  position: absolute;
+  top: -2rem;
+  left: 5.13333333rem;
+  animation: apl 3s 2s infinite;
+}
+.org {
+  width: 1.52rem;
+  height: 1.54666667rem;
+  position: absolute;
+  top: -2rem;
+  left: 7.2rem;
+  animation: apl 3s 3s infinite;
+}
+.tg {
+  display: block;
+  width: 2rem;
+  height: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0.26666667rem;
+  right: 0.26666667rem;
+  z-index: 2;
+  border: none;
+  border-radius: 0.4rem;
+}
+.tg > a {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+.tg > a > div {
+  text-align: center;
+  width: 2rem;
+  font-size: 0.32rem;
+  height: 0.32rem;
+}
+.tg > a > p {
+  text-align: center;
+  width: 2rem;
+  font-size: 0.32rem;
+  height: 0.32rem;
+  margin-top: 0.01333333rem;
+}

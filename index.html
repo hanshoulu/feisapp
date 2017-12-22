@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>引导页</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/yd.css" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/swiper.css">
+        <script>
+            var pixelRatio = 1 / window.devicePixelRatio;   //还原设备的真实分辨率；
+            //devicePixelRatio设备的像素比；
+            
+            document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+            var html=document.getElementsByTagName('html')[0];
+            var pageWidth=html.getBoundingClientRect().width;
+            html.style.fontSize=pageWidth/10+"px"; 
+        </script>
+        <!-- 
+            1.固定定位元素内容中有input，会导致触发键盘之后导致固定定位错位；
+            
+        -->
+    </head>
+    <body>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bc1">
+                    <img class="sun" src="imgs/sun.png">
+                    <img class="c1" src="imgs/c1.png">
+                    <img class="c2" src="imgs/c2.png">
+                    <img class="ru" src="imgs/roud1.png">
+                    <img class="co" src="imgs/co.png">
+                    <p class="ln1">原汁原味</p>
+                    <p class="ln2">全部来自原产地</p>
+                    <p class="ln3">100%新鲜</p>
+                </div>
+                <div class="swiper-slide bc2">
+                    <img class="ru2" src="imgs/roud2.png">
+                    <img class="saf" src="imgs/saf.png">
+                    <p class="ln1">健康安全</p>
+                    <p class="ln2">全程冷链保鲜</p>
+                    <p class="ln3">安心到家</p>
+                </div> 
+                <div class="swiper-slide bc3">
+                    <img class="thc" src="imgs/cll.png">
+                    <img class="plan" src="imgs/plan.png">
+                    <img class="all" src="imgs/all.png">
+                    <p class="ln1">闪电配送</p>
+                    <p class="ln4">快捷直达&nbsp;服务至上</p>
+                    <p class="ln5">新鲜尽享</p>
+                </div> 
+                <div class="swiper-slide bc4">
+                    <img class="apl" src="imgs/apl.png">
+                    <img class="li" src="imgs/li.png">
+                    <img class="ng" src="imgs/ng.png">
+                    <img class="org" src="imgs/org.png">
+                    <img class="roud4" src="imgs/roud4.png">
+                    <p class="ln1">优惠多多</p>
+                    <p class="ln4">原地直发&nbsp;省去中间价</p>
+                    <p class="ln5">美味实惠</p>
+                </div> 
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <button class="tg">
+                <a class="tz" href="index1.html" target="_top">
+                    <div id="ne"></div>
+                    <p>跳过</p>
+                </a>
+            </button>
+        </div>  
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+      </script>
+
+      <!-- 字体变化 -->
+      <!-- <script>
+          var i=0;
+          function fo(){
+          x=0.1*i;
+          i++;
+          $('.ln1').css('opacity',x)
+          }
+          setInterval(fo,200);
+      </script> -->
+      
+    <script>
+        //倒计时
+        var x=10;
+        var oN=document.getElementById('ne');
+        function dj(){
+            x=x-1;
+            if(x>=0){
+                oN.innerHTML=x;
+            }
+            else{
+            }
+        }
+        setInterval(dj,1000);
+        clearInterval(dj,1000);
+        function tz(){
+            $('.tz>p').trigger('click');
+        }
+        setTimeout(tz,10000)
+        //太阳放大
+        // $(".sun").animate({},function(){                                  
+        //     $(".sun").css({'transform':'scale(2)'}); 
+        // })
+        //云动
+        // $(".c1").animate({},function(){                                  
+        //     $(".c1").css({'transform':'translateX(20px)'}); 
+        // }) 
+    </script> 
+    </body>
+    </html>
